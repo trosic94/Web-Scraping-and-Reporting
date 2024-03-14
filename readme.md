@@ -38,13 +38,14 @@ Da biste počeli sa projektom, potrebno je instalirati Docker Desktop i Node.js(
 
 1. Instalirajte Docker Desktop sa [zvanične web stranice](https://www.docker.com/products/docker-desktop).
 2. Instalirajte Node.js sa [zvanične web stranice](https://nodejs.org/).
+3. Za pisanje SQL-a i upravljanje bazom podataka mozete koristiti tool na koji ste navikli, moja preporuka je dbeaver.
+    Konekciju za bazu vam se nalaze u docker-compose.yml fajlu.
 
 ## Uputstvo za instalaciju:
 
 1. Klone ovaj repozitorijum: `git clone https://github.com/vasusername/repozitorijum.git`
 2. Uđite u direktorijum projekta: `cd repozitorijum`
 3. Pokrenite Docker Desktop.
-4. Izvršite `npm install` kako biste instalirali sve potrebne pakete.
 
 ## Uputstvo za korišćenje:
 

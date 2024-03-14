@@ -42,7 +42,7 @@ Da biste počeli sa projektom, potrebno je instalirati Docker Desktop i Node.js(
 
 ## Uputstvo za instalaciju:
 
-1. Klone ovaj repozitorijum: `git clone https://github.com/vasusername/repozitorijum.git`
+1. Klone ovaj repozitorijum: `git clone git@github.com:trosic94/Web-Scraping-and-Reporting.git`
 2. Uđite u direktorijum projekta: `cd repozitorijum`
 3. Pokrenite Docker Desktop.
 

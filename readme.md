@@ -1,7 +1,7 @@
 
 U ovom repozitorijumu vam se nalazi skeleton docker nodejs aplikacije koji ce vam biti pocetna tacka.
 
-1.  Doraditi aplikaciju tako da preuzima live korisnička imena igrača sa Stake.com i smešta ih u tabelu stake_players relacione baze podataka
+1.  Doraditi aplikaciju tako da preuzima live korisnička imena igrača sa Stake.com i smešta ih u tabelu stake_players relacione baze podataka.
     Username-ovi igraca se pojavljuju na kartici "All bets".
 2.  SQL kojim se moze pratiti koliko se username-ova pojavljuje u poslednjih sat vremena.
 3.  SQL koji pokazuje u poslednih 10h koliko je username-ova bilo po satu.
@@ -13,14 +13,14 @@ U ovom repozitorijumu vam se nalazi skeleton docker nodejs aplikacije koji ce va
         |       3      | 16:00
         |       ...    | 17:00
     
-    Tabela koju je potrebno kreirati je: 
-    stake_players(username, date) - date kolona predstavlja trenutno vreme koje je potrebno za realizaciju trazenih sql-ova, kolona username je primary key
+Za resavanje prva 3 zadatka vam je potrebna sledeca tabela:: 
+stake_players(username, date) - date kolona predstavlja trenutno vreme koje je potrebno za realizaciju trazenih sql-ova, kolona username je primary key
 5. Bonus zadatak(Nije obavezan):
     Napisati paralelnu funkciju koja ce za preuzete stake igrace proveravati da li se neki od username-ova nalazi kod konkurentskih sajtova (shuffle i gamdom), ukoliko se nalazi preuzeti njihov wager sa konkurentskih sajtova i upisati u drugu tabelu.
     Da bi ste scrape-ovali wager igraca sa drugih sajtova mozete koristiti web scraping sa frontend-a ili pronadjite public API koji vraca ove podatke. 
     
-    Tabela koju je potrebno kreirati je:
-    stake_competitors_players (username, competitor_name, wager,date): competitor_name kolona je naziv konkurencije  SHUFFLE ili GAMDOM, wager kolona je NUMERIC polje i oznacava koliko je igrac wagerovao kod konkurencije. Foreign key je username iz tabele stake_players.
+Za 5. zadatak potrebna je sledeca tabela:
+stake_competitors_players (username, competitor_name, wager,date): competitor_name kolona je naziv konkurencije  SHUFFLE ili GAMDOM, wager kolona je NUMERIC polje i oznacava koliko je igrac wagerovao kod konkurencije. Foreign key je username iz tabele stake_players.
 
 
 ## Tehnologije koje se koriste:

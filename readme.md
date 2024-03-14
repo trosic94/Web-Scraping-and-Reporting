@@ -7,11 +7,11 @@ U ovom repozitorijumu vam se nalazi skeleton docker nodejs aplikacije koji ce va
 3.  SQL koji pokazuje u poslednih 10h koliko je username-ova bilo po satu.
     Npr.:
     
-        | Username  |  Broj betova
-        | User 1    | 15 |
-        | User 2    | 8  |
-        | User 3    | 3  |
-        | ...       |... |
+        | Username  |  Broj betova | Hour
+        | User 1    |      15      | 14:00
+        | User 2    |       8      | 15:00
+        | User 3    |       3      | 16:00
+        | ...       |       ...    | 17:00
     
     Tabela koju je potrebno kreirati je: 
     stake_players(username, date) - date kolona predstavlja trenutno vreme koje je potrebno za realizaciju trazenih sql-ova, kolona username je primary key

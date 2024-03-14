@@ -15,10 +15,10 @@ U ovom repozitorijumu vam se nalazi skeleton docker nodejs aplikacije koji ce va
     
 Za resavanje prva 3 zadatka vam je potrebna sledeca tabela:: 
 stake_players(username, date) - date kolona predstavlja trenutno vreme koje je potrebno za realizaciju trazenih sql-ova, kolona username je primary key
-5. Napisati paralelnu funkciju koja ce za preuzete stake igrace proveravati da li se neki od username-ova nalazi kod konkurentskih sajtova (shuffle i gamdom), ukoliko se nalazi preuzeti njihov wager sa konkurentskih sajtova i upisati u drugu tabelu.
+4. Napisati paralelnu funkciju koja ce za preuzete stake igrace proveravati da li se neki od username-ova nalazi kod konkurentskih sajtova (shuffle i gamdom), ukoliko se nalazi preuzeti njihov wager sa konkurentskih sajtova i upisati u drugu tabelu.
     Da bi ste scrape-ovali wager igraca sa drugih sajtova mozete koristiti web scraping sa frontend-a ili pronadjite public API koji vraca ove podatke. 
     
-Za 5. zadatak potrebna je sledeca tabela:
+Za 4. zadatak potrebna je sledeca tabela:
 stake_competitors_players (username, competitor_name, wager,date): competitor_name kolona je naziv konkurencije  SHUFFLE ili GAMDOM, wager kolona je NUMERIC polje i oznacava koliko je igrac wagerovao kod konkurencije. Foreign key je username iz tabele stake_players.
 
 

@@ -19,7 +19,7 @@ stake_players(username, date) - date kolona predstavlja trenutno vreme koje je p
     Da bi ste scrape-ovali wager igraca sa drugih sajtova mozete koristiti web scraping sa frontend-a ili pronadjite public API koji vraca ove podatke. 
     
 Za 4. zadatak potrebna je sledeca tabela:
-stake_competitors_players (username, competitor_name, wager,date): competitor_name kolona je naziv konkurencije  SHUFFLE ili GAMDOM, wager kolona je NUMERIC polje i oznacava koliko je igrac wagerovao kod konkurencije. Foreign key je username iz tabele stake_players.
+stake_competitors_players (username, competitor_name, wager,date): competitor_name kolona je naziv konkurencije  SHUFFLE ili ROLLBIT, wager kolona je NUMERIC polje i oznacava koliko je igrac wagerovao kod konkurencije. Foreign key je username iz tabele stake_players.
 
 
 ## Tehnologije koje se koriste:
@@ -38,7 +38,7 @@ Da biste počeli sa projektom, potrebno je instalirati Docker Desktop i Node.js(
 1. Instalirajte Docker Desktop sa [zvanične web stranice](https://www.docker.com/products/docker-desktop).
 2. Instalirajte Node.js sa [zvanične web stranice](https://nodejs.org/).
 3. Za pisanje SQL-a i upravljanje bazom podataka mozete koristiti tool na koji ste navikli, moja preporuka je dbeaver.
-    Konekciju za bazu vam se nalaze u docker-compose.yml fajlu.
+    Konekcija za bazu vam se nalazi u docker-compose.yml fajlu.
 
 ## Uputstvo za instalaciju:
 
